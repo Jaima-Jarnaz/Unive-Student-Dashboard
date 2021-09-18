@@ -1,0 +1,14 @@
+.a-message-text {
+  font-family: $font-family-default;
+  &--active-text {
+    color: $color-dark-lavender;
+    font-weight: $font-weight-six;
+    @include u-fz(13, 16);
+  }
+
+  &--normal-text {
+    color: $text-color-light-gray;
+    font-weight: $font-weight-regular;
+    @include u-fz(13, 16);
+  }
+}

@@ -1,0 +1,6 @@
+.a-text {
+  @include font-default-bold();
+  @include u-fz(11, 14);
+  color: $upcoming-season-text-color;
+  margin: 0;
+}

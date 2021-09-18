@@ -1,0 +1,37 @@
+.o-card {
+  @include sp() {
+    height: 112px;
+    display: flex;
+    align-items: center;
+    background-color: $background-color-Ghost-White;
+    border-radius: 12px;
+    justify-content: space-around;
+  }
+  @include pc() {
+    position: relative;
+  }
+
+  &__left-content {
+    @include pc() {
+      width: 336px;
+      height: 304px;
+      border-radius: 20px;
+      background-color: $background-color-Ghost-White;
+    }
+    @include tab() {
+      width: 100%;
+    }
+  }
+
+  &__right-content {
+    @include pc() {
+      position: absolute;
+      bottom: -62px;
+      left: 11px;
+    }
+
+    @include tab() {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.a-active-programs-item-uni-name {
+  @include font-default-medium();
+  @include u-fz(14, 17, -0.24);
+  color: $active-programs-color;
+  width: 200px;
+  margin: 0;
+  @include sp() {
+    width: 189px;
+    height: 28px;
+  }
+}

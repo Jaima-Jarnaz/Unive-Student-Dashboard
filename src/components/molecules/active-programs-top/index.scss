@@ -1,0 +1,16 @@
+.m-active-programs-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__left {
+    padding-left: 25.06px;
+    padding-top: 26px;
+  }
+  &__right {
+    padding-top: 14.62px;
+    padding-right: 25px;
+    @include sp() {
+      padding-right: 25px;
+    }
+  }
+}

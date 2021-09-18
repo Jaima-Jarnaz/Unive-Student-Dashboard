@@ -1,0 +1,10 @@
+.a-active-programs-item-dept-name {
+  @include font-default-medium();
+  @include u-fz(10, 24);
+  color: $color-white;
+  margin: 0;
+  padding: 0px 10px;
+  @include sp() {
+    padding: 0px;
+  }
+}

@@ -1,0 +1,45 @@
+.m-messenger-top {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+  width: 100%;
+
+  &__left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 16px;
+    padding-top: 11px;
+    &__first {
+      width: 20%;
+      height: 29.52px;
+    }
+    &__second {
+      padding-left: 13.48px;
+      padding-top: 6px;
+      width: 80%;
+      height: 19px;
+    }
+  }
+  &__right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    &__first {
+      padding-top: 8.33%;
+      padding-left: 14%;
+    }
+    &__second {
+      padding-top: 8.33%;
+      margin-left: 14%;
+    }
+    &__third {
+      padding-top: 8.33%;
+      margin-left: 14%;
+    }
+    &__fourth {
+      padding-top: 8.33%;
+      margin-left: 14%;
+    }
+  }
+}

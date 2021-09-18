@@ -1,0 +1,31 @@
+.a-mobilenavlink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14px;
+
+  #--link-1 {
+    //````````````````````///using id```````````````//
+    @include u-fz(12, 14);
+    font-weight: $font-weight-six;
+    color: $color-purple;
+  }
+
+  &__image {
+    width: 25px;
+    height: 24px;
+  }
+
+  &--img-1 {
+  }
+
+  &__item {
+  }
+
+  &__itemlink {
+    text-decoration: none;
+    @include u-fz(12, 14);
+    font-weight: $font-weight-regular;
+    color: $text-color-light-gray;
+  }
+}

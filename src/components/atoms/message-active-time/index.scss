@@ -1,0 +1,7 @@
+.a-active-time-text {
+  @include u-fz(10, 11);
+  font-family: $font-family-default;
+  font-weight: $font-weight-regular;
+  color: $messaging-active-time-text;
+  padding-bottom: 18px;
+}

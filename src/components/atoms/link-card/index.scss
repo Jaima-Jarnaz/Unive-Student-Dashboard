@@ -1,0 +1,17 @@
+.a-cardlink {
+  text-decoration: none;
+  color: $color-purple;
+  font-weight: $font-weight-six;
+  @include pc() {
+    @include u-fz(14, 17, 1);
+  }
+  @include sp() {
+    @include u-fz(12, 14, 1);
+  }
+  // &__span {
+  //   @include font-default-medium();
+  //   @include u-fz(12);
+  //   // padding-right: 5px;
+  //   color: $color-purple;
+  // }
+}

@@ -1,0 +1,137 @@
+// fonts related mixins
+@mixin font-default-regular() {
+  font-family: $font-family-default;
+  font-weight: $font-weight-regular;
+}
+
+@mixin font-default-medium() {
+  font-family: $font-family-default;
+  font-weight: $font-weight-medium;
+}
+
+@mixin font-default-bold() {
+  font-family: $font-family-default;
+  font-weight: $font-weight-bold;
+}
+
+@mixin font-alphabet-regular() {
+  font-family: $font-family-alphabet;
+  font-weight: $font-weight-regular;
+}
+
+/*
+convert line-height & letter-spacing px values into relative value.
+px-based values can be extracted from Abstract. Always use this to define line-height & letter-spacing
+If cutLineSpace=true, the spacing the top of first-line & the bottom of last-line caused by line-height will be killed.
+--------------------------------------------------------- */
+@mixin u-fz(
+  $fontSizePx: false,
+  $lineHeightPx: false,
+  $letterSpacingPx: false,
+  $cutLineSpace: false
+) {
+  @if ($fontSizePx) {
+    font-size: $fontSizePx + px;
+  }
+
+  @if ($lineHeightPx) {
+    line-height: ($lineHeightPx / $fontSizePx);
+  }
+
+  @if ($letterSpacingPx) {
+    letter-spacing: ($letterSpacingPx / $fontSizePx) + em;
+  }
+
+  @if ($cutLineSpace) {
+    &:before,
+    &:after {
+      display: block;
+      overflow: hidden;
+      content: "";
+    }
+
+    $_marginVal: ($lineHeightPx - $fontSizePx) * -0.5;
+
+    &:before {
+      margin-bottom: $_marginVal + px;
+    }
+    &:after {
+      margin-top: $_marginVal + px;
+    }
+  }
+}
+
+@mixin pc() {
+  @media (min-width: $WIDTH-PC + 1) {
+    @content;
+  }
+}
+
+@mixin sp() {
+  @media (max-width: $WIDTH-PC) {
+    @content;
+  }
+}
+
+@mixin sp-header() {
+  @media (max-width: $WIDTH-HEADER) {
+    @content;
+  }
+}
+
+@mixin tab() {
+  @media (min-width: $WIDTH-PC + 1) and (max-width: $WIDTH-TAB) {
+    @content;
+  }
+}
+@mixin large-pc() {
+  @media (min-width: $WIDTH-LARGE-PC + 1) {
+    @content;
+  }
+}
+
+@mixin hover-animation($bgcolor: $color-green) {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 70%;
+    width: 0;
+    background-color: $bgcolor;
+    left: -5%;
+    top: -10%;
+    border-radius: 0 0 80% 0;
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    transform: rotate(5deg);
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    height: 70%;
+    width: 0;
+    background-color: $bgcolor;
+    right: -5%;
+    bottom: -10%;
+    border-radius: 80% 0 0 0;
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    transform: rotate(5deg);
+  }
+  &:hover {
+    @content;
+    z-index: 1;
+    &:before {
+      height: 230%;
+      z-index: -1;
+      width: 57%;
+    }
+    &:after {
+      height: 230%;
+      z-index: -1;
+      width: 57%;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.o-common {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  @include sp() {
+    width: 100%;
+  }
+  @include tab() {
+    width: 100%;
+  }
+
+  &__sideBar {
+    @include sp() {
+      width: 3%;
+    }
+    @include tab() {
+      width: 3%;
+    }
+
+    &-vector__img {
+      width: 30px;
+      height: 30px;
+    }
+
+    &-rotateText {
+      @include font-default-bold();
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      margin-top: 300px;
+      color: $color-pure-black;
+      width: 114px;
+      @include sp() {
+        width: 190px;
+      }
+      @include tab() {
+        width: 190px;
+      }
+    }
+  }
+
+  &__task {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    @include sp() {
+      flex-direction: column;
+      width: 95%;
+      height: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    @include tab() {
+      flex-direction: column;
+      width: 95%;
+      height: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &-image-overlay {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      @include sp() {
+        width: 100%;
+        order: 2;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      @include tab() {
+        width: 100%;
+        order: 2;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+
+    &-image-overlay > img {
+      position: absolute;
+      margin-left: 150px;
+      object-fit: cover;
+      width: 566.39px;
+      height: 578px;
+      @include sp() {
+        position: absolute;
+        width: 100%;
+        height: 320px;
+        margin: 0 auto;
+      }
+      @include tab() {
+        position: absolute;
+        width: 100%;
+        height: 320px;
+        margin: 0 auto;
+      }
+    }
+
+    &-area {
+      display: flex;
+      width: 80%;
+      background: #ecf1f2;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      margin-top: 26px;
+      @include sp() {
+        margin-top: 16px;
+        width: 100%;
+        order: 1;
+        height: auto;
+      }
+      @include tab() {
+        margin-top: 16px;
+        width: 100%;
+        order: 1;
+        height: auto;
+      }
+
+      &-filler {
+        width: 15%;
+        @include sp() {
+          width: 2%;
+        }
+        @include tab() {
+          width: 2%;
+        }
+      }
+
+      &-mainItem {
+        width: 40%;
+        @include sp() {
+          display: flex;
+        }
+        @include tab() {
+          width: 98%;
+        }
+      }
+    }
+  }
+}

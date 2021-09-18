@@ -1,0 +1,14 @@
+.a-time-label {
+  @include font-default-bold();
+  @include u-fz(9, 11);
+  color: $time-label-color;
+  margin: 0;
+  display: inline;
+  padding: 3px 7px 3px;
+  background-color: $time-label-bg-color;
+  border-radius: 11px;
+
+  @include sp() {
+    @include u-fz(9, 11);
+  }
+}

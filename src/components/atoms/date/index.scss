@@ -1,0 +1,9 @@
+.a-date {
+  color: $text-color-greysuit;
+  text-transform: uppercase;
+  font-family: $font-family-default;
+  display: block;
+  text-align: center;
+  @include u-fz(16, 19);
+  @include font-default-bold();
+}

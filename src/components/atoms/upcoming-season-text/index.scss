@@ -1,0 +1,7 @@
+.a-upcoming-season-text {
+  @include font-default-medium();
+  font-weight: $font-weight-six;
+  @include u-fz(16, 19);
+  color: $active-programs-color;
+  margin: 0;
+}

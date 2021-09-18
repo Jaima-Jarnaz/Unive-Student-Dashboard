@@ -1,0 +1,30 @@
+.a-common-text {
+  @include font-default-medium();
+  @include u-fz(20, 30);
+  font-family: "Open Sans";
+  color: $common-text-color;
+  letter-spacing: 0.02em;
+
+  @include sp() {
+    @include u-fz(12, 20);
+  }
+
+  &__readmore {
+    @include font-default-medium();
+    @include u-fz(20, 30);
+    color: $common-task-readMore;
+    @include sp() {
+      @include u-fz(12, 20);
+    }
+  }
+
+  &__readmore--sign {
+    writing-mode: vertical-rl;
+    @include font-default-bold();
+  }
+}
+
+button {
+  border: none;
+  background: none;
+}

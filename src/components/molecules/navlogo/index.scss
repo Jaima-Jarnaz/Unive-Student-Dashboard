@@ -1,0 +1,16 @@
+.m-sidenav-logo {
+  position: relative;
+  &__img {
+    @include pc() {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      top: 0px;
+      right: 10px;
+    }
+  }
+
+  &__content {
+    padding-left: 40px;
+  }
+}

@@ -1,0 +1,33 @@
+.o-searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__left {
+    width: 72.1%;
+    padding: 30px;
+
+    @include tab() {
+      width: 57%;
+      padding: 18px;
+    }
+  }
+
+  &__line {
+    height: 40px;
+  }
+
+  &__right {
+    width: 27.9%;
+    padding: 20px;
+    display: flex;
+
+    align-items: center;
+
+    @include tab() {
+      width: 43%;
+      padding: 8px;
+    }
+  }
+}

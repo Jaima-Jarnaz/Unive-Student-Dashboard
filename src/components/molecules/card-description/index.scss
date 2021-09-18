@@ -1,0 +1,86 @@
+.m-card-description {
+  @include pc() {
+    background-color: $background-color-Ghost-White;
+    width: 315px;
+    height: 112px;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  @include sp() {
+    // width: 345px;
+    height: 127px;
+  }
+  @include tab() {
+    width: 94%;
+  }
+  &__content {
+    @include pc() {
+      display: flex;
+      align-items: baseline;
+      padding: 25px 0px 0px 13px;
+    }
+    @include sp() {
+      display: flex;
+      align-items: baseline;
+      padding: 25px 0px 0px 0px;
+    }
+  }
+
+  &__left-content {
+    @include sp() {
+      display: block;
+    }
+
+    @include pc() {
+      display: inline-block;
+      width: 75%;
+    }
+  }
+
+  &__progress {
+    padding-top: 10px;
+  }
+
+  &__text-content {
+  }
+
+  &__date-content {
+  }
+
+  &__date {
+    @include u-fz(16, 19);
+  }
+
+  &__month {
+    @include u-fz(12);
+  }
+
+  &__right-content {
+    width: 87px;
+    border-radius: 11px;
+
+    @include sp() {
+      display: block;
+    }
+
+    @include pc() {
+      display: inline-block;
+    }
+    @include tab() {
+      width: 31%;
+    }
+  }
+
+  &__container {
+    @include pc() {
+      display: grid;
+      grid-row-gap: 10px;
+    }
+
+    @include sp() {
+      display: grid;
+      grid-row-gap: 10px;
+    }
+  }
+}

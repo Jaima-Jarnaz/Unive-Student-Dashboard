@@ -1,0 +1,65 @@
+.a-sidenavlink {
+  @include pc() {
+    display: flex;
+    padding-bottom: 36px;
+  }
+  @include sp() {
+  }
+
+  #--link-1 {
+    //````````````````````///using id```````````````//
+    @include pc() {
+      color: $color-white;
+      @include u-fz(18, 21.48);
+      font-family: $font-family-default;
+      font-weight: $font-weight-bold;
+    }
+    @include sp() {
+      @include u-fz(12, 14);
+      font-weight: $font-weight-six;
+      color: $color-purple;
+    }
+  }
+
+  &__image {
+    @include pc() {
+      width: 15.08px;
+      height: 14.06px;
+    }
+    @include tab() {
+      width: 16px;
+      height: 14.99px;
+    }
+    // @include sp() {
+    //   width: 16px;
+    //   height: 14.99px;
+    // }
+  }
+
+  &--img-1 {
+  }
+
+  &__item {
+    @include pc() {
+      padding-left: 17px;
+    }
+  }
+
+  &__itemlink {
+    text-decoration: none;
+    @include pc() {
+      @include u-fz(16, 9.09);
+      font-weight: $font-weight-regular;
+      color: $text-color-light-purple;
+    }
+    @include sp() {
+      // @include u-fz(12, 14);
+      // font-weight: $font-weight-six;
+      // color: $text-color-light-gray;
+      display: none;
+    }
+    @include tab() {
+      display: none;
+    }
+  }
+}

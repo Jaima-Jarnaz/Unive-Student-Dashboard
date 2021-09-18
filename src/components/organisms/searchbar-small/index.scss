@@ -1,0 +1,71 @@
+.o-searchbar-small {
+  display: flex;
+
+  width: 100%;
+
+  &__logo {
+    width: 13.6%;
+
+    &-size {
+      width: 51px;
+      height: 48px;
+    }
+  }
+
+  &__content {
+    width: 86.4%;
+    display: flex;
+    justify-content: space-around;
+
+    &-search {
+      width: 65%;
+      display: flex;
+      align-items: center;
+      &-box {
+        width: 100%;
+        background: $color-search-bar;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+      }
+    }
+    &-profile {
+      width: 23%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-messenger {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    left: 0;
+    bottom: 0;
+
+    &__top {
+      display: flex;
+      width: 100%;
+      background: $background-color-Ghost-White;
+      border-bottom: 1px solid $messenger-top-border-bottom-color;
+    }
+
+    &__myday {
+      width: 100%;
+      &-border {
+        width: 92%;
+        margin-left: 12px;
+        border-bottom: 1px solid $color-gray;
+      }
+    }
+
+    &__message-section {
+      width: 100%;
+    }
+  }
+}

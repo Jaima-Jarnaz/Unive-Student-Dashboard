@@ -1,0 +1,24 @@
+.m-date {
+  display: flex;
+  flex-direction: column;
+  @include u-fz(10, 10);
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+
+  &__week {
+    color: $week-color;
+    @include font-default-bold();
+  }
+
+  &__day {
+    @include u-fz(18, 21);
+    @include font-default-bold();
+    color: $text-color-gray;
+  }
+
+  &__month {
+    @include font-default-bold();
+    color: $text-color-gray;
+  }
+}

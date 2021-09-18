@@ -1,0 +1,27 @@
+.m-messenger-right-content {
+  display: flex;
+  @include pc() {
+    width: 212px;
+  }
+  @include sp() {
+  }
+
+  &__textheading {
+    color: $color-dark-lavender;
+    font-family: $font-family-default;
+    font-weight: $font-weight-six;
+    @include u-fz(13, 16);
+  }
+
+  &__messagetext {
+    padding-top: 6px;
+  }
+
+  &__text {
+    width: 74.6%;
+  }
+
+  &__time-notification {
+    width: 25.4%;
+  }
+}

@@ -1,0 +1,45 @@
+.a-card-checkedin {
+  background-color: $color-purple;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+
+  @include pc() {
+    width: 56px;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+    // padding: 5px;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+  }
+  @include sp() {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
+    opacity: 0.7;
+    border-radius: 10px;
+  }
+
+  &__checkedimg {
+    @include pc() {
+      width: 19px;
+      height: 15.12px;
+    }
+    @include sp() {
+      width: 27.8px;
+      height: 22.12px;
+    }
+  }
+
+  &__checktext {
+    color: $color-white;
+    @include pc() {
+      @include u-fz(8, 9);
+    }
+    @include sp() {
+      @include u-fz(10, 12);
+    }
+  }
+}

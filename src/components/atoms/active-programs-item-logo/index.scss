@@ -1,0 +1,10 @@
+.a-active-programs-item-logo {
+  width: 68.17px;
+  height: 68px;
+  @include sp() {
+    width: 67px;
+    height: 68px;
+  }
+  &--fullwidth {
+  }
+}

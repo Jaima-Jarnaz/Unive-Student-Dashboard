@@ -1,0 +1,14 @@
+.o-upcoming-season {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &__date {
+    width: 20%;
+  }
+
+  &__season-item {
+    width: 80%;
+  }
+}

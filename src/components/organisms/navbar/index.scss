@@ -1,0 +1,27 @@
+.o-navbar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-dark-lavender;
+
+  &__heading {
+    padding-top: 46px;
+    padding-bottom: 64px;
+
+    &-text {
+      @include font-default-bold();
+      @include u-fz(30, 48);
+      color: #a1a1c2;
+    }
+  }
+
+  &__box {
+    padding-top: 100px;
+    &-logo {
+      width: 176.12px;
+      height: 190px;
+      border-radius: 20px;
+    }
+  }
+}

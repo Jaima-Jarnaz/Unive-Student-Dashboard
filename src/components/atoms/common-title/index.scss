@@ -1,0 +1,21 @@
+.a-common-title {
+  @include u-fz(59, 118);
+  @include font-default-bold();
+  color: $common-title-color;
+  margin: 0;
+
+  @include sp() {
+    @include u-fz(30, 60);
+  }
+
+  @include tab() {
+    font-size: 36px;
+  }
+}
+
+.a-dash {
+  width: 111.7px;
+  @include sp() {
+    width: 50px;
+  }
+}

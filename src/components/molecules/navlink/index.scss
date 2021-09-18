@@ -1,0 +1,24 @@
+.m-sidenav {
+  &__banner {
+    padding-left: 25px;
+    padding-top: 65px;
+    padding-bottom: 38px;
+
+    img {
+      @include pc() {
+        width: 176.12px;
+        height: 190px;
+      }
+      @include tab() {
+        display: none;
+      }
+    }
+  }
+
+  &__linkcontent {
+    @include pc() {
+      padding-left: 45px;
+      padding-top: 64px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.a-profile-name {
+  @include font-default-bold();
+  @include u-fz(16, 16);
+  color: $color-profile-designation;
+  margin: 0;
+  cursor: pointer;
+}

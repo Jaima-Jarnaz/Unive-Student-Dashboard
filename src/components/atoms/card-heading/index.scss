@@ -1,0 +1,27 @@
+.a-card-heading {
+  &__headingtext {
+    font-family: $font-family-default;
+    font-weight: $font-weight-medium;
+    color: $text-color-persian-blue;
+    @include pc() {
+      @include u-fz(20, 24);
+    }
+
+    @include sp() {
+      @include u-fz(15, 19);
+    }
+  }
+
+  &__subtext {
+    color: $text-color-light-gray;
+    font-family: $font-family-default;
+    text-transform: uppercase;
+    font-weight: normal;
+    @include pc() {
+      @include u-fz(11, 13);
+    }
+    @include sp() {
+      @include u-fz(10, 12);
+    }
+  }
+}

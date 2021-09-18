@@ -1,0 +1,9 @@
+.a-heading1 {
+  @include u-fz(32, 64);
+  @include font-default-medium();
+  margin: 0;
+
+  @include sp() {
+    @include u-fz(26, 52, -2);
+  }
+}

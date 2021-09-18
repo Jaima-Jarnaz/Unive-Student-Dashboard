@@ -1,0 +1,3 @@
+@function pxToVw($value) {
+  @return #{$value / 375 * 100}vw;
+}

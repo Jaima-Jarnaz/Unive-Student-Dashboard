@@ -1,0 +1,33 @@
+.a-profile-pic {
+  cursor: pointer;
+  @include sp() {
+    width: 29.52px;
+    height: 29.52px;
+  }
+
+  &--searchBar_pic {
+    width: 40.36px;
+    height: 40px;
+  }
+
+  &--messenger_pic {
+    width: 29.52px;
+    height: 29.52px;
+  }
+
+  &--profile_pic {
+    width: 55px;
+    height: 55px;
+  }
+
+  &--myDay_pic {
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: #ff2c55 #5855d6;
+
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,7 @@
+.a-upcoming-season-all-text {
+  @include font-default-bold();
+  @include u-fz(14, 17);
+  color: $active-programs-item-dept-bg-color;
+  margin: 0;
+  cursor: pointer;
+}

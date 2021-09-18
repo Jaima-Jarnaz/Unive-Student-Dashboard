@@ -1,0 +1,9 @@
+.m-active-programs-item-right-item {
+  @include sp() {
+    display: none;
+  }
+  &__logo {
+  }
+  &__text {
+  }
+}

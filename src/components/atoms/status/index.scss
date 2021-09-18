@@ -1,0 +1,25 @@
+.a-status {
+  display: flex;
+  align-items: center;
+  font-family: $font-family-default;
+  &__content-img {
+    padding-right: 6px;
+    img {
+      height: 24px;
+      width: 24px;
+      @include sp() {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+
+  &__text {
+    color: $text-color-red;
+    font-style: italic;
+    font-weight: normal;
+    @include sp() {
+      @include u-fz(12, 14);
+    }
+  }
+}

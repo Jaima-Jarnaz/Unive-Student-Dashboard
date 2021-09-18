@@ -1,0 +1,19 @@
+.m-active-programs-item-dept {
+  background-color: $active-programs-item-dept-bg-color;
+  border-radius: 35px;
+  display: flex;
+  // width: 180px;
+  display: inline-block;
+  // width: auto;
+  &__name {
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  @include sp() {
+    width: 144px;
+    height: 22px;
+  }
+}

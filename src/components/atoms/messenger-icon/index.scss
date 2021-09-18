@@ -1,0 +1,11 @@
+.a-messenger-icon {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+
+  @include sp() {
+    padding-top: 6px;
+    width: 44px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,6 @@
+.a-navbar-text {
+  @include font-default-regular();
+  @include u-fz(16, 19);
+  color: $text-color-light-purple;
+  margin: 0;
+}

@@ -1,0 +1,7 @@
+$WIDTH-PC: 640px;
+$WIDTH-TAB: 1024px;
+$WIDTH-HEADER: 985px;
+$WIDTH-LARGE-PC: 1440px;
+:root {
+  --width-pc: calc(#{$WIDTH-PC} - 1px);
+}

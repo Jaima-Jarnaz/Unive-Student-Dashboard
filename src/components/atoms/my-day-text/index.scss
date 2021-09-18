@@ -1,0 +1,6 @@
+.a-my-day-text {
+  @include font-default-regular();
+  @include u-fz(12, 14);
+  color: $messaging-active-time-text;
+  margin: 0;
+}

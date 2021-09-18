@@ -1,0 +1,7 @@
+.a-messenger-top-text {
+  @include font-default-medium();
+  @include u-fz(16, 19);
+  color: $messenger-top-text-color;
+  font-weight: bold;
+  cursor: pointer;
+}

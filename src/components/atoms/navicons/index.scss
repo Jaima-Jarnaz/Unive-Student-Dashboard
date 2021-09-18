@@ -1,0 +1,15 @@
+.a-sidenavimage {
+  &__imgcontainer {
+    padding-bottom: 42px;
+  }
+  &__image {
+    width: 23px;
+    cursor: pointer;
+
+    &--logo-0 {
+      width: 27.21px;
+      padding-top: 30px;
+      padding-bottom: 43px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.o-sidenav {
+  @include pc() {
+    background-color: $color-dark-lavender;
+    // padding-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  @include sp() {
+    display: none;
+  }
+  // &__container-mobilenav {
+  //   @include pc() {
+  //     display: none;
+  //   }
+  // }
+  &__bottomborder {
+    position: fixed;
+    width: 134px;
+    bottom: 0;
+    left: 122px;
+    right: 119px;
+
+    img {
+      width: 134px;
+    }
+  }
+}

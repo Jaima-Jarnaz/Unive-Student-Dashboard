@@ -1,0 +1,6 @@
+body {
+  @include font-default-regular();
+  @include u-fz(14, 28);
+  color: $color-black;
+  margin: 0;
+}

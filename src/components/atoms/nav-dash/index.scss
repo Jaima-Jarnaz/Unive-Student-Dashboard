@@ -1,0 +1,33 @@
+.a-span {
+  position: absolute;
+  width: 5px;
+  top: 155px;
+  height: 34px;
+  left: 0px;
+  background-color: $text-color-deep-red;
+  border-radius: 5px;
+  @include tab() {
+    top: 166px;
+  }
+
+  &--bottom-nav-dash {
+    position: absolute;
+    width: 60px;
+    top: 0;
+    height: 5px;
+    background-color: $color-purple;
+    border-radius: 5px;
+    bottom: 0;
+    left: 35px;
+  }
+
+  &--tabnav {
+    position: absolute;
+    width: 5px;
+    top: 199px;
+    height: 34px;
+    left: 0px;
+    background-color: $text-color-deep-red;
+    border-radius: 5px;
+  }
+}

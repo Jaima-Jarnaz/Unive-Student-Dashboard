@@ -1,0 +1,6 @@
+.a-sub-text {
+  @include font-default-medium();
+  @include u-fz(10, 13);
+  color: $text-color-gray;
+  margin: 0;
+}

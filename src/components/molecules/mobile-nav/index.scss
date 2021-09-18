@@ -1,0 +1,22 @@
+.m-nav-bottom {
+  @include pc() {
+    display: none;
+  }
+
+  @include sp() {
+    background-color: $color-white;
+    height: 84px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    display: block;
+
+    &__linkcontent {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}

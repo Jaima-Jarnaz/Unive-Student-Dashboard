@@ -1,0 +1,50 @@
+.a-navlogo-link {
+  text-decoration: none;
+  &__content {
+    @include pc() {
+      width: 170.12px;
+
+      display: flex;
+    }
+    @include tab() {
+      padding-top: 48px;
+    }
+  }
+  &__image {
+    width: 27.21px;
+    @include pc() {
+    }
+    @include sp() {
+      width: 27.21px;
+      height: 36.11px;
+    }
+  }
+  &__logotextcontent {
+    padding-left: 11px;
+    @include tab() {
+      display: none;
+    }
+  }
+
+  &__logotext {
+    @include pc() {
+      display: block;
+      // font-family: $font-family-MuseoModerno;
+      font-weight: $font-weight-six;
+      line-height: 47.7px;
+      letter-spacing: 2%;
+      @include u-fz(30, 48, 0.02);
+      // background: linear-gradient(
+      //   $color-nav-logo-gray 69%,
+      //   $color-light-white 70%
+      // );
+      //background: linear-gradient(to bottom, #ffffff 63%, #deddff 70%);
+      background-color: $color-nav-logo-gray;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @include sp() {
+      display: none;
+    }
+  }
+}

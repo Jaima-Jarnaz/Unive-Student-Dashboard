@@ -1,0 +1,16 @@
+.m-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__item {
+    padding-bottom: 36px;
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__item-hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,7 @@
+.a-active-programs-heading {
+  @include font-default-medium();
+  @include u-fz(16, 19);
+  color: $time-label-color;
+  margin: 0;
+  font-weight: bold;
+}

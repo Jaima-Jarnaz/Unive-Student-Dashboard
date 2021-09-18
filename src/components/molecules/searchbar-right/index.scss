@@ -1,0 +1,53 @@
+.m-searchbar-right {
+  width: 100%;
+  display: flex;
+
+  &__icon {
+    width: 35%;
+  }
+
+  &__profile {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__icons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+    @include tab() {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-dot {
+      display: inline;
+      @include tab() {
+        display: none;
+      }
+    }
+
+    &-menu {
+      display: none;
+      @include tab() {
+        display: inline;
+        width: 30%;
+        padding-top: 5px;
+
+        &-button {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.a-text-research {
+  // @include font-default-regular();
+  // @include u-fz(16, 32);
+  // color: $text-color-black;
+  margin: 0;
+
+  @include sp() {
+    //@include u-fz(14, 28);
+  }
+}

@@ -1,0 +1,28 @@
+.m-messenger-item {
+  &__border {
+    margin-bottom: 27px;
+    width: 92%;
+    margin-left: 12px;
+    border-bottom: 1px solid $color-gray;
+    margin-top: 20px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 14px;
+  }
+
+  &__image {
+    width: 20%;
+  }
+  &__rightcontent {
+    padding-left: 14px;
+    @include pc() {
+      width: 80%;
+    }
+    @include sp() {
+      width: 100%;
+    }
+  }
+}

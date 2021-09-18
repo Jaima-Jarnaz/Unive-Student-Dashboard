@@ -1,0 +1,56 @@
+.a-card-image {
+  position: relative;
+  @include sp() {
+  }
+  @include pc() {
+    // width: 298px;
+    // height: 270px;
+    // padding: 13px;
+    // margin: 28px;
+  }
+
+  &__content {
+    @include pc() {
+      padding: 19px 0px 0px 19px;
+    }
+  }
+
+  &--img {
+    @include pc() {
+      width: 298px;
+      height: 270px;
+    }
+
+    @include sp() {
+      width: 72px;
+      height: 72px;
+      border-radius: 10px;
+      //padding-left: 12px;
+    }
+
+    @include tab() {
+      width: 94%;
+      height: 236px;
+    }
+  }
+
+  &__checkfill {
+    width: 69.65px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    @include sp() {
+      // width: 72px;
+      // height: 72px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+
+    @include tab() {
+      width: 56px;
+      height: 49px;
+      right: 35px;
+    }
+  }
+}

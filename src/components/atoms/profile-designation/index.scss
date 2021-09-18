@@ -1,0 +1,7 @@
+.a-profile-designation {
+  @include font-default-regular();
+  @include u-fz(12, 12);
+  color: $color-profile-designation;
+  opacity: 0.7;
+  margin: 0;
+}

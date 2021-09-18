@@ -1,0 +1,6 @@
+.a-upcoming-season-title {
+  @include font-default-regular();
+  @include u-fz(14, 17);
+  color: $color-upcoming-title;
+  margin: 0;
+}

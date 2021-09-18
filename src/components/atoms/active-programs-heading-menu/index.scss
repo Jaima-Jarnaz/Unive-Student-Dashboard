@@ -1,0 +1,10 @@
+.a-active-programs-heading-menu {
+  width: 22px;
+  height: 4.88px;
+  cursor: pointer;
+  @include sp() {
+    height: 4.88px;
+  }
+  &--fullwidth {
+  }
+}

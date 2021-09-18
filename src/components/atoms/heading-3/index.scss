@@ -1,0 +1,7 @@
+.a-heading3 {
+  @include font-default-medium();
+  font-weight: $font-weight-six;
+  @include u-fz(16, 19);
+  color: $text-color-persian-blue;
+  margin: 0;
+}

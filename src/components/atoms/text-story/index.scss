@@ -1,0 +1,15 @@
+.a-text-story {
+  //font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  &--smalltext {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+    font-size: 40px;
+    color: blue;
+  }
+  &--mediumtext {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 500;
+    font-size: 30px;
+    color: red;
+  }
+}

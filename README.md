@@ -1,4 +1,4 @@
-# BOILERPLATE
+# Student Dashboard Figma 
 
 ![REACT](https://place-hold.it/80x33/433/fff?text=REACT&bold)&nbsp;
 ![REDUX](https://place-hold.it/80x33/506/fff?text=REDUX&bold)&nbsp;

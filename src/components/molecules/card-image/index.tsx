@@ -1,12 +1,13 @@
 import { CardImageContent } from "components/atoms/card-image";
-export interface CardImageProps {
-  className: string;
-}
+// export interface CardImageProps {
+//   className: string;
+//   color: string;
+// }
 
-export const CardImage: React.FC<CardImageProps> = ({ className }) => {
+export const CardImage: React.FC<any> = ({ modifiers }) => {
   return (
     <div className="m-card-image">
-      <CardImageContent />
+      <CardImageContent modifiers={modifiers} />
     </div>
   );
 };

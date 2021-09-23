@@ -9,11 +9,26 @@
   @include sp() {
     display: none;
   }
-  // &__container-mobilenav {
-  //   @include pc() {
-  //     display: none;
-  //   }
-  // }
+  //themes
+
+  &--theme-lightgreen {
+    @include themelightgreen;
+  }
+  &--theme-orange {
+    @include themeorange;
+  }
+  &--theme-purple {
+    @include themepurple;
+  }
+  &--theme-skyblue {
+    @include themeskyblue;
+  }
+  &--theme-darkpurple {
+    @include themedarkpurple;
+  }
+
+  //themes end
+
   &__bottomborder {
     position: fixed;
     width: 134px;

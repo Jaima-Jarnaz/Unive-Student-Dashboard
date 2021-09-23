@@ -4,14 +4,14 @@ export interface CardImageProps {
   className: string;
 }
 
-export const CardImageContent: React.FC = () => {
+export const CardImageContent: React.FC<any> = ({ modifiers }) => {
   return (
     <div className="a-card-image">
       <div className="a-card-image__content">
         <img className="a-card-image--img" src={img} alt="progress" />
       </div>
       <div className="a-card-image__checkfill">
-        <CardCheckedIn />
+        <CardCheckedIn modifiers={modifiers} />
       </div>
     </div>
   );

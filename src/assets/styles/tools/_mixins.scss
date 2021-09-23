@@ -18,7 +18,23 @@
   font-family: $font-family-alphabet;
   font-weight: $font-weight-regular;
 }
+///////theme//////
+@mixin themelightgreen {
+  background-color: $theme-lightgreen;
+}
 
+@mixin themeskyblue {
+  background-color: $theme-skyblue;
+}
+@mixin themeorange {
+  background-color: $theme-orange;
+}
+@mixin themepurple {
+  background-color: $theme-purple;
+}
+@mixin themedarkpurple {
+  background-color: $color-purple;
+}
 /*
 convert line-height & letter-spacing px values into relative value.
 px-based values can be extracted from Abstract. Always use this to define line-height & letter-spacing

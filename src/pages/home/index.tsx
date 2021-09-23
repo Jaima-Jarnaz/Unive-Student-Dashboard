@@ -10,14 +10,30 @@ import { UpcomingSeasonItems } from "components/organisms/upcoming-season-items"
 import { ItemMessenger } from "components/organisms/messenger-item";
 import { SearchbarSmall } from "components/organisms/searchbar-small";
 import { MobileNav } from "components/molecules/mobile-nav";
+import { ThemeColorDiv } from "components/atoms/theme-div-color-story";
 import customize_logo from "../../assets/icons/customize-icon.png";
 import arrow from "assets/image/arrow.png";
 import menu from "../../assets/icons/menu.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Home = () => {
   const [click, setClick] = useState(false);
   const [variant, setVariant] = useState("on");
+  const [colorTheme, setColorTheme] = useState("theme-darkpurple");
+  //theme
+  useEffect(() => {
+    const currentTheme = localStorage.getItem("themecolor");
+    if (currentTheme) {
+      setColorTheme(currentTheme);
+    }
+  }, []);
+
+  const handleClick = (theme: string) => {
+    setColorTheme(theme);
+    localStorage.setItem("theme-color", theme);
+  };
+
+  //theme end
 
   const handleNavbar = () => {
     setClick(!click);
@@ -27,7 +43,9 @@ const Home = () => {
 
   return (
     <div className="p-home">
-      <div className={`p-home__navbar p-home__navbar-${variant}`}>
+      <div
+        className={`p-home__navbar p-home__navbar--${colorTheme} p-home__navbar-${variant}`}
+      >
         {!click && (
           <div className="p-home__navbar-arrow">
             <button onClick={handleNavbar}>
@@ -55,7 +73,7 @@ const Home = () => {
 
         {!click && (
           <div className="p-home__navbar-side">
-            <SideNavBar />
+            <SideNavBar modifiers={colorTheme} />
           </div>
         )}
       </div>
@@ -67,6 +85,47 @@ const Home = () => {
         <div className="p-home__content-searchbar-small">
           <SearchbarSmall></SearchbarSmall>
         </div>
+
+        {/* //theme start */}
+
+        <div className="p-home__themecolor">
+          <div
+            className="p-home--theme-lightgreen"
+            onClick={() => {
+              handleClick("theme-lightgreen");
+            }}
+          >
+            <ThemeColorDiv modifiers="theme-lightgreen" />
+          </div>
+          <div
+            className="p-home--theme-skyblue"
+            onClick={() => {
+              handleClick("theme-skyblue");
+            }}
+          >
+            <ThemeColorDiv modifiers="theme-skyblue" />
+          </div>
+
+          <div
+            className="p-home--theme-orange"
+            onClick={() => {
+              handleClick("theme-orange");
+            }}
+          >
+            <ThemeColorDiv modifiers="theme-orange" />
+          </div>
+
+          <div
+            className="p-home--theme-purple"
+            onClick={() => {
+              handleClick("theme-purple");
+            }}
+          >
+            <ThemeColorDiv modifiers="theme-purple" />
+          </div>
+        </div>
+
+        {/* //theme end */}
 
         <div className="p-home__content-greeting">
           <div className="p-home__content-greeting-name">
@@ -126,7 +185,7 @@ const Home = () => {
             </div>
             <div className="p-home__content-body-program-other">
               <div className="p-home__content-body-program-other-research">
-                <Card />
+                <Card modifiers={colorTheme} />
               </div>
               <div className="p-home__content-body-program-other-upcoming-season">
                 <UpcomingSeasonItems />

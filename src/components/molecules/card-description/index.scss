@@ -83,4 +83,16 @@
       grid-row-gap: 10px;
     }
   }
+
+  ///theme=------------
+  &__link-theme-purple {
+    background-color: purple;
+  }
+  &__link-theme-green {
+    background-color: green;
+  }
+  &__link-theme-yellow {
+    background-color: yellow;
+    color: black;
+  }
 }

@@ -15,6 +15,22 @@
   background-color: $color-home;
   justify-content: space-between;
 
+  //theme``````
+  &__themecolor {
+    display: flex;
+    width: 50%;
+    margin: 20px;
+    div {
+      cursor: pointer;
+      width: 10%;
+      height: 20%;
+      padding: 20px;
+      margin: 6px;
+    }
+  }
+
+  //theme end````
+
   @include sp() {
     width: 100%;
     height: 100%;
@@ -25,6 +41,22 @@
     display: flex;
     flex-direction: column;
     background: $color-dark-lavender;
+
+    &--theme-lightgreen {
+      @include themelightgreen;
+    }
+    &--theme-orange {
+      @include themeorange;
+    }
+    &--theme-purple {
+      @include themepurple;
+    }
+    &--theme-skyblue {
+      @include themeskyblue;
+    }
+    &--theme-darkpurple {
+      @include themedarkpurple;
+    }
 
     @include sp() {
       display: none;
@@ -281,6 +313,43 @@
           }
         }
       }
+    }
+  }
+}
+
+.o-card-theme {
+  display: flex;
+  column-gap: 20px;
+  width: 50%;
+  margin: 20px;
+  &__colortheme {
+    display: flex;
+  }
+  &__common {
+    div {
+      cursor: pointer;
+      width: 10%;
+      height: 20%;
+      padding: 20px;
+      margin: 6px;
+    }
+  }
+  &__theme-green {
+    @include themelightgreen;
+  }
+  &__theme-yellow {
+    @include themeorange;
+  }
+  &__theme-purple {
+    @include themepurple;
+  }
+
+  &__right-content {
+    width: 50%;
+    height: 40%;
+
+    &--theme-green {
+      @include themelightgreen;
     }
   }
 }

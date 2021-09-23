@@ -1,0 +1,21 @@
+.a-theme-div {
+  div {
+    cursor: pointer;
+    width: 10%;
+    height: 20%;
+    padding: 20px;
+    margin: 6px;
+  }
+  &--theme-lightgreen {
+    @include themelightgreen;
+  }
+  &--theme-orange {
+    @include themeorange;
+  }
+  &--theme-purple {
+    @include themepurple;
+  }
+  &--theme-skyblue {
+    @include themeskyblue;
+  }
+}

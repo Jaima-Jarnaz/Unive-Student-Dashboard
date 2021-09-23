@@ -3,6 +3,8 @@ import { Status } from "components/atoms/status";
 import { LinkCard } from "components/atoms/link-card";
 import { Date } from "components/atoms/date";
 import { CardHeading } from "components/atoms/card-heading";
+import { mapModifiers } from "lib/utils";
+
 export interface CardProps {
   headingtext: string;
   subheadingtext: string;
@@ -12,12 +14,14 @@ export interface CardProps {
   month: string;
   status: string;
 }
-interface CardPropsItems {
+export interface CardPropsItems {
   cardData: CardProps[];
+  modifiers?: "theme-green" | "theme-yellow" | "theme-purple";
 }
 
 export const CardDescription: React.FC<CardPropsItems> = ({
   cardData,
+  modifiers,
 }: CardPropsItems) => {
   return (
     <div className="m-card-description">
@@ -44,7 +48,9 @@ export const CardDescription: React.FC<CardPropsItems> = ({
                   </Date>
                 </div>
                 <div className="m-card-description__link">
-                  <LinkCard href={cardData.href}>{cardData.link}</LinkCard>
+                  <LinkCard href={cardData.href} modifiers={modifiers}>
+                    {cardData.link}
+                  </LinkCard>
                 </div>
               </div>
             </div>

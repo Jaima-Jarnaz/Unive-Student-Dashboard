@@ -1,7 +1,14 @@
 import { CardDescription } from "components/molecules/card-description";
 import { CardImage } from "components/molecules/card-image";
+import { mapModifiers } from "lib/utils";
+import classNames from "classnames";
 
-export const Card: React.FC<any> = () => {
+// export interface UXProps {
+//   modifiers?: "theme-green" | "theme-yellow" | "theme-purple";
+//   className?: string;
+// }
+
+export const Card: React.FC<any> = ({ modifiers }) => {
   const cardData = [
     {
       headingtext: "UX Research - Week 3",
@@ -11,16 +18,17 @@ export const Card: React.FC<any> = () => {
       month: "April",
       status: "In Progress",
       href: "mk",
+      //colors: props.color,
     },
   ];
 
   return (
     <div className="o-card">
       <div className="o-card__left-content">
-        <CardImage className="item" />
+        <CardImage className="item" modifiers={modifiers} />
       </div>
       <div className="o-card__right-content">
-        <CardDescription cardData={cardData} />
+        <CardDescription modifiers={modifiers} cardData={cardData} />
       </div>
     </div>
   );

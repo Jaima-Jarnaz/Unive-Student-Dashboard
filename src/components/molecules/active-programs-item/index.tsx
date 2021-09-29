@@ -8,6 +8,7 @@ export interface ActiveProgramsItemProps {
   modifier?: string;
   logoSrc: string;
   deptName: string;
+  bgColor: string;
   uniName: string;
   rightItemFirstLogo: string;
   rightItemFirstText: string;
@@ -23,6 +24,7 @@ export const ActiveProgramsItem: React.FC<ActiveProgramsItemProps> = ({
   modifier,
   logoSrc,
   deptName,
+  bgColor,
   uniName,
   rightItemFirstLogo,
   rightItemFirstText,
@@ -40,7 +42,7 @@ export const ActiveProgramsItem: React.FC<ActiveProgramsItemProps> = ({
       </div>
       <div className="m-active-programs-item__middle">
         <div className="m-active-programs-item__middle__dept-name">
-          <ActiveProgramsItemDept title={deptName} />
+          <ActiveProgramsItemDept title={deptName} bgColor={bgColor} />
         </div>
         <div className="m-active-programs-item__middle__uni-name">
           <ActiveProgramsItemUniName>{uniName}</ActiveProgramsItemUniName>

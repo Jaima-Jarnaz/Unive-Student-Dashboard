@@ -2,15 +2,19 @@ import { ActiveProgramsItemDeptName } from "components/atoms/active-programs-ite
 
 export interface ActiveProgramsItemDeptProps {
   title: string;
+  bgColor: string;
 }
 
 export const ActiveProgramsItemDept: React.FC<ActiveProgramsItemDeptProps> = ({
   title,
+  bgColor,
 }) => {
   return (
     <div className="m-active-programs-item-dept">
       <div className="m-active-programs-item-dept__name">
-        <ActiveProgramsItemDeptName>{title}</ActiveProgramsItemDeptName>
+        <ActiveProgramsItemDeptName bgColor={bgColor}>
+          {title}
+        </ActiveProgramsItemDeptName>
       </div>
     </div>
   );

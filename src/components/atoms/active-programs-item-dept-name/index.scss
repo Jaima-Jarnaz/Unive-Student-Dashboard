@@ -7,4 +7,32 @@
   @include sp() {
     padding: 0px;
   }
+
+  //themes
+  &--theme-lightgreen {
+    @include themelightgreen;
+  }
+  &--theme-orange {
+    @include themeorange;
+  }
+  &--theme-purple {
+    @include themepurple;
+  }
+  &--theme-skyblue {
+    @include themeskyblue;
+  }
+  &--theme-darkpink {
+    @include themedarkpink;
+  }
+  &--theme-lightpurple {
+    @include themelightpurple;
+  }
+  &--theme-green {
+    @include themegreen;
+  }
+  &--theme-darkmegenda {
+    @include themedarkmegenda;
+  }
+
+  //themes end
 }

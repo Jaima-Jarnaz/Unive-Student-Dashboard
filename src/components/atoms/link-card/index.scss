@@ -15,7 +15,58 @@
   //   color: $color-purple;
   // }
 
+  //themes
+  &--theme-lightgreen {
+    @include themelightgreen;
+  }
+  &--theme-orange {
+    @include themeorange;
+  }
+  &--theme-purple {
+    @include themepurple;
+  }
+  &--theme-skyblue {
+    @include themeskyblue;
+  }
+  &--theme-darkpink {
+    @include themedarkpink;
+  }
+  &--theme-lightpurple {
+    @include themelightpurple;
+  }
   &--theme-green {
-    @include themelightgreen();
+    @include themegreen;
+  }
+  &--theme-darkmegenda {
+    @include themedarkmegenda;
+  }
+
+  //themes end
+
+  //---------------theme-text-color-----------
+
+  &--lightpurple-text {
+    @include themetextlightpurple;
+  }
+  &--lightgreen-text {
+    @include themetextlightgreen;
+  }
+  &--skyblue-text {
+    @include themetextskyblue;
+  }
+  &--orange-text {
+    @include themetextorange;
+  }
+  &--purple-text {
+    @include themetextpurple;
+  }
+  &--darkpink-text {
+    @include themetextdarkpink;
+  }
+  &--green-text {
+    @include themetextgreen;
+  }
+  &--darkmegenda-text {
+    @include themetextdarkmegenda;
   }
 }

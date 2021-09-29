@@ -8,14 +8,38 @@
   }
   &--theme-lightgreen {
     @include themelightgreen;
+    color: $color-white;
+  }
+  &--theme-green {
+    @include themegreen;
+    color: $color-white;
   }
   &--theme-orange {
     @include themeorange;
+    color: $color-white;
   }
   &--theme-purple {
     @include themepurple;
+    color: $color-white;
+  }
+  &--theme-darkpurple {
+    @include themedarkpurple;
+    color: $color-white;
+  }
+  &--theme-lightpurple {
+    @include themelightpurple;
+    color: $color-white;
   }
   &--theme-skyblue {
     @include themeskyblue;
+    color: $color-white;
+  }
+  &--theme-darkpink {
+    @include themedarkpink;
+    color: $color-white;
+  }
+  &--theme-darkmegenda {
+    @include themedarkmegenda;
+    color: $color-white;
   }
 }

@@ -19,18 +19,25 @@ import { useState, useEffect } from "react";
 const Home = () => {
   const [click, setClick] = useState(false);
   const [variant, setVariant] = useState("on");
-  const [colorTheme, setColorTheme] = useState("theme-darkpurple");
+  const [colorTheme, setColorTheme] = useState("theme-lightpurple");
+  const [textThemecolor, setTextThemeColor] = useState<string | null>(
+    "lightpurple-text"
+  );
   //theme
   useEffect(() => {
-    const currentTheme = localStorage.getItem("themecolor");
-    if (currentTheme) {
+    const currentTheme = localStorage.getItem("theme-color");
+    const currentThemeTextColor = localStorage.getItem("theme-text-color");
+    if (currentTheme && currentThemeTextColor) {
       setColorTheme(currentTheme);
+      setTextThemeColor(currentThemeTextColor);
     }
   }, []);
 
-  const handleClick = (theme: string) => {
+  const handleClick = (theme: string, themeText: string) => {
     setColorTheme(theme);
+    setTextThemeColor(themeText);
     localStorage.setItem("theme-color", theme);
+    localStorage.setItem("theme-text-color", themeText);
   };
 
   //theme end
@@ -86,13 +93,13 @@ const Home = () => {
           <SearchbarSmall></SearchbarSmall>
         </div>
 
-        {/* //theme start */}
+        {/* -------------//theme start //-------------------------*/}
 
         <div className="p-home__themecolor">
           <div
             className="p-home--theme-lightgreen"
             onClick={() => {
-              handleClick("theme-lightgreen");
+              handleClick("theme-lightgreen", "lightgreen-text");
             }}
           >
             <ThemeColorDiv modifiers="theme-lightgreen" />
@@ -100,7 +107,7 @@ const Home = () => {
           <div
             className="p-home--theme-skyblue"
             onClick={() => {
-              handleClick("theme-skyblue");
+              handleClick("theme-skyblue", "skyblue-text");
             }}
           >
             <ThemeColorDiv modifiers="theme-skyblue" />
@@ -109,7 +116,7 @@ const Home = () => {
           <div
             className="p-home--theme-orange"
             onClick={() => {
-              handleClick("theme-orange");
+              handleClick("theme-orange", "orange-text");
             }}
           >
             <ThemeColorDiv modifiers="theme-orange" />
@@ -118,10 +125,46 @@ const Home = () => {
           <div
             className="p-home--theme-purple"
             onClick={() => {
-              handleClick("theme-purple");
+              handleClick("theme-purple", "purple-text");
             }}
           >
             <ThemeColorDiv modifiers="theme-purple" />
+          </div>
+
+          <div
+            className="p-home--theme-darkpink"
+            onClick={() => {
+              handleClick("theme-darkpink", "darkpink-text");
+            }}
+          >
+            <ThemeColorDiv modifiers="theme-darkpink" />
+          </div>
+
+          <div
+            className="p-home--theme-lightpurple"
+            onClick={() => {
+              handleClick("theme-lightpurple", "lightpurple-text");
+            }}
+          >
+            <ThemeColorDiv modifiers="theme-lightpurple" />
+          </div>
+
+          <div
+            className="p-home--theme-green"
+            onClick={() => {
+              handleClick("theme-green", "green-text");
+            }}
+          >
+            <ThemeColorDiv modifiers="theme-green" />
+          </div>
+
+          <div
+            className="p-home--theme-darkmegenda"
+            onClick={() => {
+              handleClick("theme-darkmegenda", "darkmegenda-text");
+            }}
+          >
+            <ThemeColorDiv modifiers="theme-darkmegenda" />
           </div>
         </div>
 
@@ -185,7 +228,7 @@ const Home = () => {
             </div>
             <div className="p-home__content-body-program-other">
               <div className="p-home__content-body-program-other-research">
-                <Card modifiers={colorTheme} />
+                <Card modifiers={colorTheme} textColor={textThemecolor} />
               </div>
               <div className="p-home__content-body-program-other-upcoming-season">
                 <UpcomingSeasonItems />
@@ -211,7 +254,7 @@ const Home = () => {
               <div className="p-home__content-body-messenger-myday-border"></div>
             </div>
             <div className="p-home__content-body-messenger-message-section">
-              <ItemMessenger />
+              <ItemMessenger themebackgroundcolor={`${colorTheme}`} />
             </div>
           </div>
           <div className="p-home__content-body-bottom-nav">

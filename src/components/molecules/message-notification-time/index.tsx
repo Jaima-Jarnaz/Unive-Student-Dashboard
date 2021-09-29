@@ -7,7 +7,7 @@ export interface MessageProps {
   className?: string;
   timetext: string;
   notificationNum: string;
-  modifiers: any;
+  themebackgroundcolor?: string;
 }
 
 export const MessageTimeNotification: React.FC<MessageProps> = ({
@@ -15,7 +15,7 @@ export const MessageTimeNotification: React.FC<MessageProps> = ({
   className,
   timetext,
   notificationNum,
-  modifiers,
+  themebackgroundcolor,
 }) => (
   <div className="m-message-time-notification">
     <div>
@@ -24,7 +24,7 @@ export const MessageTimeNotification: React.FC<MessageProps> = ({
     <div>
       <MessageNotificationCircle
         children={notificationNum}
-        modifiers={modifiers}
+        themebackgroundcolor={themebackgroundcolor}
       />
     </div>
   </div>

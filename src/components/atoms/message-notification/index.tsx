@@ -3,17 +3,17 @@ import { mapModifiers } from "lib/utils";
 export interface TextProps {
   children?: React.ReactNode;
   className?: string;
-  modifiers: any;
+  themebackgroundcolor?: string;
 }
 
 export const MessageNotificationCircle: React.FC<TextProps> = ({
   children,
   className,
-  modifiers,
+  themebackgroundcolor,
 }) => (
   <div
     className={classNames(
-      mapModifiers("a-notification-circle", modifiers),
+      mapModifiers("a-notification-circle", themebackgroundcolor),
       className
     )}
   >

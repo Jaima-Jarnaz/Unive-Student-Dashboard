@@ -19,7 +19,7 @@
   &__themecolor {
     display: flex;
     width: 50%;
-    margin: 20px;
+    margin: auto;
     div {
       cursor: pointer;
       width: 10%;
@@ -44,18 +44,39 @@
 
     &--theme-lightgreen {
       @include themelightgreen;
+      @include themetextlightgreen;
     }
-    &--theme-orange {
-      @include themeorange;
+    &--theme-green {
+      @include themegreen;
+      @include themetextgreen;
     }
     &--theme-purple {
       @include themepurple;
-    }
-    &--theme-skyblue {
-      @include themeskyblue;
+      @include themetextpurple;
     }
     &--theme-darkpurple {
       @include themedarkpurple;
+      @include themetextdarkpurple;
+    }
+    &--theme-orange {
+      @include themeorange;
+      @include themetextorange;
+    }
+    &--theme-skyblue {
+      @include themeskyblue;
+      @include themetextskyblue;
+    }
+    &--theme-darkpink {
+      @include themedarkpink;
+      @include themetextdarkpink;
+    }
+    &--theme-lightpurple {
+      @include themelightpurple;
+      @include themetextlightpurple;
+    }
+    &--theme-darkmegenda {
+      @include themedarkmegenda;
+      @include themetextdarkmegenda;
     }
 
     @include sp() {

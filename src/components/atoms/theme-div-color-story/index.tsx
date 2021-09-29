@@ -2,11 +2,7 @@ import classNames from "classnames";
 import { mapModifiers } from "lib/utils";
 
 export interface ThemeColorDivProps {
-  modifiers:
-    | "theme-lightgreen"
-    | "theme-skyblue"
-    | "theme-orange"
-    | "theme-purple";
+  modifiers: string;
 
   className?: string;
   children?: string;

@@ -196,6 +196,7 @@ const Home = () => {
               <div className="p-home__content-body-program-active-items">
                 <ActiveProgramsItem
                   logoSrc="src/assets/images/placeholder.png"
+                  bgColor={colorTheme}
                   deptName="MASTER OF COMPUTER SCIENCE"
                   uniName="University of Upstate at Brookstone"
                   rightItemFirstLogo="src/assets/images/1.png"
@@ -214,6 +215,7 @@ const Home = () => {
                   modifier="special-case"
                   logoSrc="src/assets/images/placeholdersecond.png"
                   deptName="CERTIFICATE UX/UI DESIGN"
+                  bgColor={colorTheme}
                   uniName="Academy of Art and Technology at Dursburg"
                   rightItemFirstLogo="src/assets/images/0.png"
                   rightItemFirstText="src/assets/images/Overdue Assignments.png"

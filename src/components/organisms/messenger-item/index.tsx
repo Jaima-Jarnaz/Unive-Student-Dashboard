@@ -6,10 +6,17 @@ import image3 from "assets/image/image3.png";
 import image4 from "assets/image/image4.png";
 import user from "assets/image/Users.png";
 
-export const ItemMessenger: React.FC<any> = () => {
+export interface MessengerItemProps {
+  themebackgroundcolor?: string;
+}
+
+export const ItemMessenger: React.FC<MessengerItemProps> = ({
+  themebackgroundcolor,
+}) => {
   const messageData = [
     {
       modifiers: "active-text",
+      themebackgroundcolor: `${themebackgroundcolor}`,
       name: "Sophie Kowalski",
       messagetext: "Thanks, Mia. Please let me know when I can...",
       timetext: "3  min",
@@ -18,6 +25,7 @@ export const ItemMessenger: React.FC<any> = () => {
     },
     {
       modifiers: "active-text",
+      themebackgroundcolor: `${themebackgroundcolor}`,
       name: "Ex Remedy App Group",
       messagetext: "Jarvis: How about I start compiling all feeback...",
       timetext: "15 min",
@@ -26,6 +34,7 @@ export const ItemMessenger: React.FC<any> = () => {
     },
     {
       modifiers: "normal-text",
+      themebackgroundcolor: `${themebackgroundcolor}`,
       name: "John Kumoz",
       messagetext: "Hey Mia. Do you know where I can find last...",
       timetext: "45  min",
@@ -34,6 +43,7 @@ export const ItemMessenger: React.FC<any> = () => {
     },
     {
       modifiers: "normal-text",
+      themebackgroundcolor: `${themebackgroundcolor}`,
       name: "Chris Meinfield",
       messagetext: "OK. I’ll have her give you a call and you can figure...",
       timetext: "Yesterday",
@@ -42,6 +52,7 @@ export const ItemMessenger: React.FC<any> = () => {
     },
     {
       modifiers: "active-text",
+      themebackgroundcolor: `${themebackgroundcolor}`,
       name: "Zoe Acorn",
       messagetext: "Any chance we can do it later this week? I’m out...",
       timetext: "Monday",
@@ -50,6 +61,7 @@ export const ItemMessenger: React.FC<any> = () => {
     },
     {
       modifiers: "normal-text",
+      themebackgroundcolor: `${themebackgroundcolor}`,
       name: "Johm Kan",
       messagetext: "Sure, no problem. I’ll send it over once we complete...",
       timetext: "Tuesday",

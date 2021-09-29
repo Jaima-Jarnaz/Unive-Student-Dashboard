@@ -16,12 +16,14 @@ export interface CardProps {
 }
 export interface CardPropsItems {
   cardData: CardProps[];
-  modifiers?: "theme-green" | "theme-yellow" | "theme-purple";
+  modifiers?: string;
+  textColor: string;
 }
 
 export const CardDescription: React.FC<CardPropsItems> = ({
   cardData,
   modifiers,
+  textColor,
 }: CardPropsItems) => {
   return (
     <div className="m-card-description">
@@ -48,7 +50,7 @@ export const CardDescription: React.FC<CardPropsItems> = ({
                   </Date>
                 </div>
                 <div className="m-card-description__link">
-                  <LinkCard href={cardData.href} modifiers={modifiers}>
+                  <LinkCard href={cardData.href} textColor={textColor}>
                     {cardData.link}
                   </LinkCard>
                 </div>

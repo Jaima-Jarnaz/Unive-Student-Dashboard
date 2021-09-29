@@ -5,6 +5,37 @@
   border-radius: 50%;
   display: block;
 
+  ///themes
+  &--theme-lightgreen {
+    @include themelightgreen;
+  }
+  &--theme-green {
+    @include themegreen;
+  }
+  &--theme-orange {
+    @include themeorange;
+  }
+  &--theme-purple {
+    @include themepurple;
+  }
+  &--theme-darkpurple {
+    @include themedarkpurple;
+  }
+  &--theme-lightpurple {
+    @include themelightpurple;
+  }
+  &--theme-skyblue {
+    @include themeskyblue;
+  }
+  &--theme-darkpink {
+    @include themedarkpink;
+  }
+  &--theme-darkmegenda {
+    @include themedarkmegenda;
+  }
+
+  //themes end
+
   &__text {
     @include u-fz(14, 16);
     text-align: center;
@@ -15,6 +46,6 @@
   }
 
   &--normal-text {
-    display: none;
+    // display: none;
   }
 }

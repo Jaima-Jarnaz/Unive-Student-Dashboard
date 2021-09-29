@@ -9,9 +9,11 @@ type Props = {
   children?: React.ReactNode;
   timetext: string;
   notificationNum: string;
+  themebackgroundcolor?: string;
 };
 
 export const MessengerRightContent: React.FC<Props> = ({
+  themebackgroundcolor,
   children,
   text,
   name,
@@ -37,7 +39,7 @@ export const MessengerRightContent: React.FC<Props> = ({
         <MessageTimeNotification
           timetext={timetext}
           notificationNum={notificationNum}
-          modifiers={modifiers}
+          themebackgroundcolor={themebackgroundcolor}
         />
       </div>
     </div>

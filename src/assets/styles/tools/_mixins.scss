@@ -18,23 +18,72 @@
   font-family: $font-family-alphabet;
   font-weight: $font-weight-regular;
 }
-///////theme//////
-@mixin themelightgreen {
+///////``````````````````````theme````````````````````````//////
+
+@mixin themelightgreen() {
   background-color: $theme-lightgreen;
 }
 
-@mixin themeskyblue {
+@mixin themeskyblue() {
   background-color: $theme-skyblue;
 }
-@mixin themeorange {
+@mixin themeorange() {
   background-color: $theme-orange;
 }
 @mixin themepurple {
   background-color: $theme-purple;
 }
-@mixin themedarkpurple {
+@mixin themedarkpurple() {
   background-color: $color-purple;
 }
+@mixin themelightpurple() {
+  background-color: $theme-light-purple;
+}
+
+@mixin themedarkpink() {
+  background-color: $theme-dark-pink;
+}
+@mixin themedarkmegenda() {
+  background-color: $theme-dark-megenda;
+}
+@mixin themegreen() {
+  background-color: $theme-green;
+}
+
+///-------------theme-text-color-----------------------------
+
+@mixin themetextlightgreen() {
+  color: $theme-lightgreen;
+}
+
+@mixin themetextskyblue() {
+  color: $theme-skyblue;
+}
+@mixin themetextorange() {
+  color: $theme-orange;
+}
+@mixin themetextpurple() {
+  color: $theme-purple;
+}
+@mixin themetextdarkpurple() {
+  color: $color-purple;
+}
+
+@mixin themetextdarkpink() {
+  color: $theme-dark-pink;
+}
+@mixin themetextdarkmegenda() {
+  color: $theme-dark-megenda;
+}
+@mixin themetextlightpurple() {
+  color: $theme-light-purple;
+}
+@mixin themetextgreen() {
+  color: $theme-green;
+}
+
+////theme-text-color-end
+
 /*
 convert line-height & letter-spacing px values into relative value.
 px-based values can be extracted from Abstract. Always use this to define line-height & letter-spacing

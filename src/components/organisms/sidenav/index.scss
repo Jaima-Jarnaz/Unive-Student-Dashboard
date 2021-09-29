@@ -26,6 +26,18 @@
   &--theme-darkpurple {
     @include themedarkpurple;
   }
+  &--theme-darkpink {
+    @include themedarkpink;
+  }
+  &--theme-lightpurple {
+    @include themelightpurple;
+  }
+  &--theme-green {
+    @include themegreen;
+  }
+  &--theme-darkmegenda {
+    @include themedarkmegenda;
+  }
 
   //themes end
 

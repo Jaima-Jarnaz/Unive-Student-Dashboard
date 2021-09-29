@@ -3,6 +3,8 @@ import { ProfilePic } from "components/atoms/profile-pic";
 import border from "assets/image/Line.png";
 export interface MessageProps {
   modifiers: any;
+  themebackgroundcolor?: string;
+
   name: string;
   messagetext: string;
   timetext: string;
@@ -35,6 +37,7 @@ export const MessengerItem: React.FC<MessagePropsItems> = ({
                   timetext={messageData.timetext}
                   notificationNum={messageData.notification}
                   modifiers={messageData.modifiers}
+                  themebackgroundcolor={messageData.themebackgroundcolor}
                 />
               </div>
             </div>

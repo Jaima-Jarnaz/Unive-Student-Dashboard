@@ -2,7 +2,16 @@ import checked from "assets/image/checked.png";
 import classNames from "classnames";
 import { mapModifiers } from "lib/utils";
 export interface CheckedProps {
-  modifiers?: "theme-green" | "theme-yellow" | "theme-purple";
+  modifiers?:
+    | "theme-green"
+    | "theme-skyblue"
+    | "theme-purple"
+    | "theme-darkpink"
+    | "theme-lightpurple"
+    | "theme-darkmegenda"
+    | "theme-lightpurple"
+    | "theme-lightgreen"
+    | "theme-orange";
   className?: string;
 }
 

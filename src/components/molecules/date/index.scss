@@ -9,6 +9,33 @@
   &__week {
     color: $week-color;
     @include font-default-bold();
+
+    //---------------theme-text-color-----------
+
+    &--lightpurple-text {
+      @include themetextlightpurple;
+    }
+    &--lightgreen-text {
+      @include themetextlightgreen;
+    }
+    &--skyblue-text {
+      @include themetextskyblue;
+    }
+    &--orange-text {
+      @include themetextorange;
+    }
+    &--purple-text {
+      @include themetextpurple;
+    }
+    &--darkpink-text {
+      @include themetextdarkpink;
+    }
+    &--green-text {
+      @include themetextgreen;
+    }
+    &--darkmegenda-text {
+      @include themetextdarkmegenda;
+    }
   }
 
   &__day {

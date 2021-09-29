@@ -44,39 +44,31 @@
 
     &--theme-lightgreen {
       @include themelightgreen;
-      @include themetextlightgreen;
     }
     &--theme-green {
       @include themegreen;
-      @include themetextgreen;
     }
+
     &--theme-purple {
       @include themepurple;
-      @include themetextpurple;
     }
     &--theme-darkpurple {
       @include themedarkpurple;
-      @include themetextdarkpurple;
     }
     &--theme-orange {
       @include themeorange;
-      @include themetextorange;
     }
     &--theme-skyblue {
       @include themeskyblue;
-      @include themetextskyblue;
     }
     &--theme-darkpink {
       @include themedarkpink;
-      @include themetextdarkpink;
     }
     &--theme-lightpurple {
       @include themelightpurple;
-      @include themetextlightpurple;
     }
     &--theme-darkmegenda {
       @include themedarkmegenda;
-      @include themetextdarkmegenda;
     }
 
     @include sp() {

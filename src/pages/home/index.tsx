@@ -233,7 +233,7 @@ const Home = () => {
                 <Card modifiers={colorTheme} textColor={textThemecolor} />
               </div>
               <div className="p-home__content-body-program-other-upcoming-season">
-                <UpcomingSeasonItems />
+                <UpcomingSeasonItems textColor={textThemecolor} />
               </div>
             </div>
           </div>

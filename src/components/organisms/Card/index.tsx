@@ -17,7 +17,7 @@ export const Card: React.FC<any> = ({ modifiers, textColor }) => {
       date: "08",
       month: "April",
       status: "In Progress",
-      href: "mk",
+      href: "ok done",
       textColor: textColor,
     },
   ];

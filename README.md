@@ -14,3 +14,6 @@
 
 
 [Unive Student Figma Design  link](https://www.figma.com/file/3o1SF06Sz3pCaB2GXCTsxV/Student-Dashboard)
+
+![Unive Student Figma](figma.PNG)
+

@@ -1,4 +1,1 @@
-Hello jaima mim
-yeasin arafat yeasin arafat
-fskjbgbs
-sfgnksfjg
+Git tags are “labels” you can add to commits to identify them. Like branches, tags are references. Unlike branches, they’re unmovable. Probably the main use case for tags is to mark version numbers.

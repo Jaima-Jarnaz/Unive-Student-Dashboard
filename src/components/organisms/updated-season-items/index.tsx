@@ -4,10 +4,10 @@ import { UpcomingSeasonText } from "components/atoms/upcoming-season-text";
 import { UpcomingSeasonTitle } from "components/atoms/upcoming-season-title";
 import { UpcomingSeason } from "components/organisms/upcoming-season";
 
-export interface UpcomingSeasonItemsProps {
+export interface UpdatedSeasonItemsProps {
   textColor: string | null;
 }
-export const UpcomingSeasonItems: React.FC<UpcomingSeasonItemsProps> = ({
+export const UpdatedSeasonItems: React.FC<UpdatedSeasonItemsProps> = ({
   textColor,
 }) => {
   return (

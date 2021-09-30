@@ -4,7 +4,7 @@ import { mapModifiers } from "lib/utils";
 import classNames from "classnames";
 
 export interface UXProps {
-  modifiers?: string;
+  modifiers: string;
   textColor?: string;
 }
 

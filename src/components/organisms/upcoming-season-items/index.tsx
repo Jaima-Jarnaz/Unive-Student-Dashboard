@@ -1,9 +1,15 @@
+import React, { HTMLAttributes, ReactNode } from "react";
 import { UpcomingSeasonAllText } from "components/atoms/upcoming-season-all-text";
 import { UpcomingSeasonText } from "components/atoms/upcoming-season-text";
 import { UpcomingSeasonTitle } from "components/atoms/upcoming-season-title";
 import { UpcomingSeason } from "components/organisms/upcoming-season";
 
-export const UpcomingSeasonItems: React.FC = () => {
+export interface UpcomingSeasonItemsProps {
+  textColor: string | null;
+}
+export const UpcomingSeasonItems: React.FC<UpcomingSeasonItemsProps> = ({
+  textColor,
+}) => {
   return (
     <div className="o-upcoming-season-items">
       <div className="o-upcoming-season-items__heading">
@@ -30,6 +36,7 @@ export const UpcomingSeasonItems: React.FC = () => {
           week="Tomorrow"
           day="09"
           month="APRIL"
+          textColor={`${textColor}`}
         ></UpcomingSeason>
         <hr className="o-upcoming-season-items__dash" />
         <UpcomingSeason
@@ -39,6 +46,7 @@ export const UpcomingSeasonItems: React.FC = () => {
           week="Wed"
           day="10"
           month="APRIL"
+          textColor={`${textColor}`}
         ></UpcomingSeason>
         <hr className="o-upcoming-season-items__dash" />
         <UpcomingSeason
@@ -48,6 +56,7 @@ export const UpcomingSeasonItems: React.FC = () => {
           week="Mon"
           day="18"
           month="DECEMBER"
+          textColor={`${textColor}`}
         ></UpcomingSeason>
       </div>
 

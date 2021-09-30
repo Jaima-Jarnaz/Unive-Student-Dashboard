@@ -8,6 +8,7 @@ export interface UpcomingSeasonProps {
   week: string;
   day: string;
   month: string;
+  textColor: string;
 }
 
 export const UpcomingSeason: React.FC<UpcomingSeasonProps> = ({
@@ -17,11 +18,12 @@ export const UpcomingSeason: React.FC<UpcomingSeasonProps> = ({
   week,
   day,
   month,
+  textColor,
 }) => {
   return (
     <div className="o-upcoming-season">
       <div className="o-upcoming-season__date">
-        <Date week={week} day={day} month={month}></Date>
+        <Date week={week} day={day} month={month} textColor={textColor}></Date>
       </div>
       <div className="o-upcoming-season__season-item">
         <SeasonItem
